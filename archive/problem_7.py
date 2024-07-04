@@ -6,11 +6,11 @@ n = 2
 primes = []
 
 def is_prime(n):
-    divisibles = []
+    factors = []
     for i in range(1, n + 1):
         if (n % i == 0):
-            divisibles.append(i)
-    return len(divisibles) <= 2
+            factors.append(i)
+    return len(factors) <= 2
 
 while len(primes) < 10001:
     if (is_prime(n)):
